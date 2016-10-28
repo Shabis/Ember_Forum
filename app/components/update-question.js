@@ -4,10 +4,10 @@ export default Ember.Component.extend({
   actions: {
     update(question) {
       var params = {
-        userQuestion: this.get('userQuestion'),
-        author: this.get('author'),
-        notes: this.get('notes'),
-        screenshot: this.get('screenshot'),
+        userQuestion: this.get('updateUserQuestion'),
+        author: this.get('updateAuthor'),
+        notes: this.get('updateNotes'),
+        screenshot: this.get('updateScreenshot'),
       };
       this.sendAction('update', question, params);
     }
