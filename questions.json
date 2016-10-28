@@ -1,0 +1,21 @@
+{ "questions": [{
+    "userQuestion": "How do you sort items within an array?",
+    "author": "Karen Koder",
+    "notes": "I have this array and I would like to put it in alphabethical order.",
+    "screenshot": "https://i.ytimg.com/vi/K0HYfbtIaxU/hqdefault.jpg"
+  }, {
+    "userQuestion": "How to you use the select form in Ember?",
+    "author": "Kay Array",
+    "notes": "I need to be able to pull the value from this form. This is what I have so far:",
+    "screenshot": "https://i.ytimg.com/vi/P9Sgaln98Qw/hqdefault.jpg"
+  }, {
+    "userQuestion": "I am getting the error message 'NullPointerException.' What does the mean?",
+    "author": "Cori Confused",
+    "notes": "It seems that no matter what I change I still keep getting this same error message",
+    "screenshot": "https://www.wordfast.net/w/images/9/9d/Aligner_Exception.png"
+  }, {
+    "userQuestion": "How do you set a value for currency in angular?",
+    "author": "Ember Spark",
+    "notes": "I would like to display currency in Angular, but the closest I have come is getting it to say USD (i.e. USD6.50), but I am looking for it to hava a dollar sign(i.e. $6.50)",
+    "screenshot": "https://c2.staticflickr.com/4/3948/15518650302_76ea7f6de5_b.jpg"
+    }]}

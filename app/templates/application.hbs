@@ -1,0 +1,21 @@
+<header>
+  <h1 id="header-name">Extinguish</h1>
+  <h3>A Forum to Help Ember Users Put Out the Flames</h3>
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbar1">
+
+        <div class="nav navbar-nav">
+          <h4 class="nav-links">{{#link-to 'index'}}Home{{/link-to}}</h4>
+          <h4 class="nav-links">{{#link-to 'add-question-page'}}Add Your Question{{/link-to}}</h4>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <hr>
+  <hr>
+</header>
+<br>
+<div class="container">
+  {{outlet}}
+</div>
