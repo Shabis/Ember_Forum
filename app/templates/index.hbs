@@ -1,3 +1,5 @@
 {{#each model as |question|}}
-  {{question-tile question=question}}
+  {{question-tile question=question update="update"}}
 {{/each}}
+
+{{new-question saveQuestion="SaveQuestion"}}
