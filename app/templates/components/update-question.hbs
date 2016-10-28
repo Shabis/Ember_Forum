@@ -1,22 +1,27 @@
-<div class="boxed">
-  <h1>Post Your Question</h1>
-  <form>
-    <div class="form-group">
-      <label for="updateUserQuestion">What is your Question</label>
-      {{input value=updateUserQuestion id="updateUserQuestion"}}
-    </div>
-    <div class="form-group">
-      <label for="Updateauthor">What is your Name</label>
-      {{input value=Updateauthor id="Updateauthor"}}
-    </div>
-    <div class="form-group">
-      <label for="updateNotes">Please provide as much detail about your question as possible</label>
-      {{input value=updateNotes id="updateNotes"}}
-    </div>
-    <div class="form-group">
-      <label for="updateScreenshot">Enter the URL for Your Screenshot</label>
-      {{input value=updateScreenshot id="updateScreenshot"}}
-    </div>
-    <button class="btn-default" {{action 'update' question}}>Save</button>
-  </form>
-</div>
+{{#if updateQuestionForm}}
+  <h4>Update {{question.userQuestion}}</h4>
+  <div class="boxed">
+    <h1>Post Your Question</h1>
+    <form>
+      <div class="form-group">
+        <label for="userQuestion">What is your Question</label>
+        {{input value=userQuestion id="userQuestion" placeholder=question.userQuestion}}
+      </div>
+      <div class="form-group">
+        <label for="author">What is your Name</label>
+        {{input value=author id="author" placeholder=question.author}}
+      </div>
+      <div class="form-group">
+        <label for="notes">Please provide as much detail about your question as possible</label>
+        {{input value=notes id="notes" placeholder=question.notes}}
+      </div>
+      <div class="form-group">
+        <label for="screenshot">Enter the URL for Your Screenshot</label>
+        {{input value=screenshot id="screenshot" placeholder=questions.screenshot}}
+      </div>
+      <button class="btn-default" {{action 'update' question}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button class="btn btn-default" {{action 'updateQuestionForm'}}>Update</button>
+{{/if}}
