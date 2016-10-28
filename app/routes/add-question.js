@@ -1,12 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model() {
-    return this.store.findAll('question');
-  },
-  actions: {
+  action: {
     saveQuestion(params) {
-      var newQuestion = this.store.createRecord('question', params);
+      var newQuestion = this.store.createRecord('userQuestion', params);
       newQuestion.save();
       this.transitionTo('index');
     }
