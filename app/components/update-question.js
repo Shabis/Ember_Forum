@@ -11,9 +11,11 @@ export default Ember.Component.extend({
         inquiry: this.get('inquiry'),
         author: this.get('author'),
         notes: this.get('notes'),
-        screenshot: this.get('screenshot'),
+        screenshot: this.get('screenshot')
       };
       this.set('updateQuestionForm', false);
+      console.log(question);
+      console.log(params);
       this.sendAction('update', question, params);
     }
   }
