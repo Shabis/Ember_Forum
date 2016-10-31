@@ -1,22 +1,29 @@
-<div class="boxed">
-  <h1>Post Your Question</h1>
-  <form>
-    <div class="form-group">
-      <label for="userQuestion">What is your Question</label>
-      {{input value=userQuestion id="userQuestion"}}
-    </div>
-    <div class="form-group">
-      <label for="questionAuthor">What is your Name</label>
-      {{input value=questionAuthor id="questionAuthor"}}
-    </div>
-    <div class="form-group">
-      <label for="notes">Please provide as much detail about your question as possible</label>
-      {{input value=notes id="notes"}}
-    </div>
-    <div class="form-group">
-      <label for="screenshot">Enter the URL for Your Screenshot</label>
-      {{input value=screenshot id="screenshot"}}
-    </div>
-    <button class="btn-default" {{action 'saveQuestion'}}>Save</button>
-  </form>
-</div>
+{{#if addNewQuestion}}
+  <h1>New Question</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="inquiry">Enter your Question</label>
+        {{input value=inquiry id="inquiry"}}
+      </div>
+
+      <div class="form-group">
+        <label for="author">Enter your Name</label>
+        {{input value=author id="author"}}
+      </div>
+
+      <div class="form-group">
+        <label for="notes">Enter a description</label>
+        {{input value=notes id="notes"}}
+      </div>
+
+      <div class="form-group">
+        <label for="screenshot">Enter a Screenshot of Your Code</label>
+        {{input value=screenshot id="screenshot"}}
+      </div>
+      <button {{action 'saveQuestion1'}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'questionFormShow'}}>New Question</button>
+{{/if}}

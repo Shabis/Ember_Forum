@@ -14,10 +14,10 @@ module.exports = function(environment) {
     },
 
     firebase: {
-      apiKey: "AIzaSyB3lUeyi-TmRj8da8zYijAqt4qVdB7L2Jw",
-      authDomain: "ember-forum-1094b.firebaseapp.com",
-      databaseURL: "https://ember-forum-1094b.firebaseio.com",
-      storageBucket: "ember-forum-1094b.appspot.com"
+      apiKey: "AIzaSyCAWUKoI-_86WuabhaZUOiTqIHYueK7tcw",
+      authDomain: "ember-qa-ab779.firebaseapp.com",
+      databaseURL: "https://ember-qa-ab779.firebaseio.com",
+      storageBucket: "ember-qa-ab779.appspot.com"
   },
 
     APP: {

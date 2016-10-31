@@ -8,7 +8,7 @@ export default Ember.Component.extend({
     },
     update(question) {
       var params = {
-        userQuestion: this.get('userQuestion'),
+        inquiry: this.get('inquiry'),
         author: this.get('author'),
         notes: this.get('notes'),
         screenshot: this.get('screenshot'),
