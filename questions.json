@@ -18,4 +18,9 @@
     "author": "Ember Spark",
     "notes": "I would like to display currency in Angular, but the closest I have come is getting it to say USD (i.e. USD6.50), but I am looking for it to hava a dollar sign(i.e. $6.50)",
     "screenshot": "https://c2.staticflickr.com/4/3948/15518650302_76ea7f6de5_b.jpg"
-    }]}
+    }],
+  "answers": [{
+    "response": "I don't know the answer to your question",
+    "respondent": "Kelly Klueless"
+    }]
+  }

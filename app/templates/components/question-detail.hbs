@@ -3,5 +3,13 @@
 <hr>
 <img src="{{question.screenshot}}"/>
 <p>{{question.notes}}</p>
-
+{{new-answer saveResponse="saveResponse" question=question}}
 {{update-question question=question update="update"}}
+<div>
+  {{#each question.answers as |answer|}}
+    <div class="boxed">
+      <h6>{{answer.respondent}}</h6>
+      <p>{{answer.response}}</p>
+    </div>
+  {{/each}}
+</div>
