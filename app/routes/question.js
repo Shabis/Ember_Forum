@@ -2,18 +2,19 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-      return this.store.findRecord('question', params.question_id);
+    return this.store.findRecord('question', params.question_id);
   },
   actions: {
     saveResponse(params) {
+      debugger;
       var newResponse = this.store.createRecord('answer', params);
       var question = params.question;
       question.get('answers').addObject(newResponse);
       newResponse.save().then(function() {
         return question.save();
       });
-      this.transitionTo('question', question);
-    },
+        this.transitionTo('question', question);
+      },
     update(question, params) {
     Object.keys(params).forEach(function(key) {
       if(params[key]!==undefined) {

@@ -9,7 +9,7 @@
     <label for="respondent">Enter Your Name</label>
     {{input value=respondent id="respondent"}}
   </div>
-  <button {{'saveResponse'}}>Save</button>
+  <button {{action 'saveResponse' answer}}>Save</button>
 </form>
 {{else}}
 <button {{action 'addNewAnswer'}}>Enter a Response</button>
