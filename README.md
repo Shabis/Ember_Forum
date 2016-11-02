@@ -1,7 +1,6 @@
 # Ember-forum
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This project allows the user to post and update question, as well as add answers to questions.
 
 ## Prerequisites
 
@@ -15,8 +14,8 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* change into the new directory
+* `git clone https://github.com/Shabis/Ember_Forum.git` 
+* `cd Ember_Forum`
 * `npm install`
 * `bower install`
 
