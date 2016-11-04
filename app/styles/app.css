@@ -1,6 +1,10 @@
 body {
   text-align: center;
-  background-color: #FFC5C1;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTqSBI9k1KMWr7y_ssX37JKvr98S5a-H4fVqSyCLuW9xqM-KQe);
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 
 .boxed {
@@ -14,4 +18,8 @@ body {
 
 header {
   background-color: #B52209;
+}
+
+.nav-links {
+  text-align: center;
 }

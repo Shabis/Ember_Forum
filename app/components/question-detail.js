@@ -1,8 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  sortBy: ['person: desc'],
+  sortBy: ['respondent: desc'],
   sortAnswers: Ember.computed.sort('question.answers', 'sortBy'),
+  favoritesList: Ember.inject.service(),
 
   actions: {
     update(question, params) {
@@ -10,6 +11,9 @@ export default Ember.Component.extend({
     },
     saveResponse(params) {
       this.sendAction('saveResponse', params);
-    }
+    },
+    addToFavorites(question) {
+      this.get('favoritesList').add(question);
+    },
   }
 });

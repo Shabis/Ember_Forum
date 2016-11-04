@@ -1,0 +1,6 @@
+<div class="boxed">
+  <h2>Favorites List</h2>
+  {{#each favoritesList.questions as |question|}}
+    <h4>{{#link-to 'question' question.id}}{{question.inquiry}}{{/link-to}}</h4>
+  {{/each}}
+</div>

@@ -14,10 +14,13 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone https://github.com/Shabis/Ember_Forum.git` 
+* `git clone https://github.com/Shabis/Ember_Forum.git`
 * `cd Ember_Forum`
 * `npm install`
 * `bower install`
+* `ember s`
+
+If you receive a build error. Replace the node_modules/ember-cli-moment folder with the ember-cli-moment folder at the top of the project directory.
 
 ## Running / Development
 
@@ -49,4 +52,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-

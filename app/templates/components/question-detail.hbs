@@ -1,18 +1,18 @@
 <h2>{{question.inquiry}}</h2>
-<h4>{{question.author}}</h4>
+<h5>{{question.author}}</h5>
 <h6>{{question.date}}</h6>
 <hr>
 <img src="{{question.screenshot}}"/>
 <p>{{question.notes}}</p>
+
+<br>
+<button class="btn btn-default" {{action 'addToFavorites' question}}>Add to Favorites</button>
+<br><br>
 {{new-answer saveResponse="saveResponse" question=question}}
+<br>
 {{update-question question=question update="update"}}
 <div>
   {{#each sortAnswers as |answer|}}
-    <div class="boxed">
-      <div class="person">
-        <h6>{{answer.respondent}}</h6>
-      </div>
-      <p>{{answer.response}}</p>
-    </div>
+    {{answer-tile answer=answer}}
   {{/each}}
 </div>
