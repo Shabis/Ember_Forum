@@ -1,5 +1,4 @@
 import Ember from 'ember';
-import moment from 'moment';
 
 export default Ember.Route.extend({
   model() {
@@ -8,9 +7,9 @@ export default Ember.Route.extend({
       answers: this.store.findAll('answer')
     });
   },
-  tagName: 'ul',
-  sortBy: ['question.date:desc'],
-  sortQuestions: Ember.computed.sort('questions', 'sortBy'),
+
+  sortBy: ['date:desc'],
+  sortQuestions: Ember.computed.sort('model.questions', 'sortBy'),
 
   actions: {
     saveQuestion(params) {

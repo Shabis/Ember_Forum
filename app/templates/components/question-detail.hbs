@@ -7,9 +7,11 @@
 {{new-answer saveResponse="saveResponse" question=question}}
 {{update-question question=question update="update"}}
 <div>
-  {{#each question.answers as |answer|}}
+  {{#each sortAnswers as |answer|}}
     <div class="boxed">
-      <h6>{{answer.respondent}}</h6>
+      <div class="person">
+        <h6>{{answer.respondent}}</h6>
+      </div>
       <p>{{answer.response}}</p>
     </div>
   {{/each}}
