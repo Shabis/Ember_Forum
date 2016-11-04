@@ -13,11 +13,11 @@ module.exports = function(environment) {
       }
     },
 
-    firebase: {
-      apiKey: "AIzaSyCAWUKoI-_86WuabhaZUOiTqIHYueK7tcw",
-      authDomain: "ember-qa-ab779.firebaseapp.com",
-      databaseURL: "https://ember-qa-ab779.firebaseio.com",
-      storageBucket: "ember-qa-ab779.appspot.com"
+  firebase: {
+    apiKey: "AIzaSyCAWUKoI-_86WuabhaZUOiTqIHYueK7tcw",
+    authDomain: "ember-qa-ab779.firebaseapp.com",
+    databaseURL: "https://ember-qa-ab779.firebaseio.com",
+    storageBucket: "ember-qa-ab779.appspot.com"
   },
 
     APP: {
